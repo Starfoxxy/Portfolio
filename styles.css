@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
 body{
     background: #080808;
     color: #fff;
@@ -66,26 +71,80 @@ ul li a:hover:after{
     width: 100%
 }
 
+section{
+    min-height: 100vh;
+    padding: 160px 12% 160px;
+}
+
+span{
+    color:#FEFEC1
+}
+
 .home{
     display: flex;
     align-items: center;
-    height: 100vh;
-    padding: 60px 9% 0;
+    justify-content: center;
+    gap: 80px;
 }
 
 .home h1{
-    font-size: 55px;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 24px;
+}
+
+.home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 60%;
 }
 
 .home-content h3{
     font-size: 32px;
-    margin-top: -10px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.home-content p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.8;
+    max-width: 1000px;
+}
+
+.home-img img{
+    position: relative;
+    width: 32vw;
+    height: 32vw;
+    object-fit: cover;
+    object-position: right center;
+    border-radius: 50%;
+    box-shadow: 0 0 25px #FEFEC1;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.home-img img:hover{
+    box-shadow: 0 0 25px #FEFEC1,
+                0 0 50px #FEFEC1,
+                0 0 100px #FEFEC1;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 24px;
 }
 
 .about{
     display:flex;
     justify-content: center;
     align-items: center;
+    gap: 160px;
 }
 
 .about-img{
@@ -94,8 +153,44 @@ ul li a:hover:after{
 
 .about-img img{
     position: relative;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px #FEFEC1;
+    top: 16px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.about-img img:hover{
+    box-shadow: 0 0 25px #FEFEC1,
+                0 0 50px #FEFEC1,
+                0 0 100px #FEFEC1;
+}
+
+.heading{
+    text-align: center;
+    font-size: 96px;
+    margin: 80px 0;
+}
 
 
+
+.about .heading{
+    margin: 0;
+}
+
+.about-content h2{
+    text-align: left;
+    line-height: 1.5;
+}
+
+.about-content h3{
+    font-size: 42px;
+}
+
+.about-content p{
+    font-size: 20px;
+    margin: 32px 0 48px;
 }
 
 .projects-box{
