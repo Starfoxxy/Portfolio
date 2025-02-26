@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair', sans-serif;
     box-sizing: border-box;
 }
 
@@ -47,7 +47,7 @@ ul li{
 ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 22px;
     position: relative;
 }
 ul li a::after{
@@ -79,6 +79,11 @@ ul li a:hover:after{
 .home-content h3{
     font-size: 32px;
     margin-top: -10px;
+}
+
+.projects-box{
+    display: flex;
+    
 }
 
 .contact{
