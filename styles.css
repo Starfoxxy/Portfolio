@@ -29,6 +29,10 @@ body{
     color: #fff;
 }
 
+.logo span{
+    text-shadow: 0 0 25px #00ffee;
+}
+
 ul {
     list-style: none;
     margin: 0;
