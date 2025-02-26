@@ -30,7 +30,7 @@ body{
 }
 
 .logo span{
-    text-shadow: 0 0 25px #00ffee;
+    text-shadow: 0 0 25px #FDBD01;
 }
 
 ul {
@@ -50,11 +50,12 @@ ul li a{
     font-size: 22px;
     position: relative;
 }
+
 ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #9AFEFF;
+    background: #FFFAA0;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -79,6 +80,22 @@ ul li a:hover:after{
 .home-content h3{
     font-size: 32px;
     margin-top: -10px;
+}
+
+.about{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img{
+    border-radius: 50%;
+}
+
+.about-img img{
+    position: relative;
+
+
 }
 
 .projects-box{
