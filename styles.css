@@ -15,6 +15,7 @@ body{
     color: #fff;
 }
 
+
 .header{
     width: 100%;
     padding: 10px 10%;
@@ -80,6 +81,29 @@ span{
     color:#FEFEC1
 }
 
+.button{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #FEFEC1;
+    box-shadow: 0 0 25px #FEFEC1;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #080808;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid transparent;
+    letter-spacing: 1.6px;
+    font-weight: 600;
+    width: auto;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.button:hover{
+    box-shadow: 0 0 50px #FEFEC1;
+    transform: scale(1.05);
+}
+
 .home{
     display: flex;
     align-items: center;
@@ -112,7 +136,7 @@ span{
 .home-content p{
     font-size: 20px;
     font-weight: 500;
-    line-height: 1.8;
+    line-height: 1.5;
     max-width: 1000px;
 }
 
@@ -134,10 +158,8 @@ span{
                 0 0 100px #FEFEC1;
 }
 
-.buttons{
-    display: flex;
-    align-items: center;
-    gap: 24px;
+.home .button{
+    margin: 32px;
 }
 
 .about{
@@ -173,8 +195,6 @@ span{
     margin: 80px 0;
 }
 
-
-
 .about .heading{
     margin: 0;
 }
@@ -193,42 +213,99 @@ span{
     margin: 32px 0 48px;
 }
 
-.projects-box{
+.project-box{
     display: flex;
-    
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.project-block{
+    flex: 1 1 30%;
+    max-width: 30%;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    gap: 10px;
+    border: 2px solid #FEFEC1; 
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 15px #FEFEC1;
+    transition: 0.4s ease;
+}
+
+.project-block:hover{
+    transform: translateY(-10px);
+}
+
+.project-block .button{
+    margin-top: 16px;
+} 
+
+.project-block img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.project-card h3{
+    font-size: 48px;
+}
+
+.project-card p{
+    font-size: 26px;
 }
 
 .contact{
-    background-color: #080808
+    background-color: #080808;
+    padding: 80px 10%;
 }
 
 .contact h2{
-    margin-bottom: 48px;
+    margin-bottom: 32px;
     color: white;
+    font-size: 44px;
+    text-align: center;
 }
 
 .contact form{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 48px;
-    margin: 80px auto;
-    text-align: center;
+    gap: 32px;
+    margin: 0px auto;
+    text-align: left;
+    max-width: 800px;
 }
 .contact form .input-box{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    width: 100%;
 }
 
 .contact form .input-box input, .contact form textarea{
     width: 100%;
-    padding: 40px;
-    font-size: 30px;
+    padding: 16px;
+    font-size: 20px;
     color: #fff;
     background-color: #080808;
-    border-radius: 32px;
-    border: 2px solid #00ffee;
-    margin: 24px 0;
+    border-radius: 14px;
+    border: 2px solid #FEFEC1;
+    margin-bottom: 24px;
     resize: none;
 }
+
+.contact form label{
+    font-size: 24;
+    margin-bottom: 8px;
+}
+
+.contact form .button{
+    margin-top: 10px;
+    width: 100%;
+} 
+
