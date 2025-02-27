@@ -225,14 +225,14 @@ span{
     max-width: 30%;
     background-color: rgba(0, 0, 0, 0.3);
     padding: 30px;
-    gap: 10px;
+    gap: 20px;
     border: 2px solid #FEFEC1; 
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     overflow: hidden;
     cursor: pointer;
     box-shadow: 0 0 15px #FEFEC1;
@@ -254,12 +254,14 @@ span{
     object-fit: cover;
 }
 
-.project-card h3{
-    font-size: 48px;
+.project-block h3{
+    font-size: 20px;
+    margin: 10px 0;
 }
 
-.project-card p{
-    font-size: 26px;
+.project-block p{
+    font-size: 14px;
+    margin: 0;
 }
 
 .contact{
